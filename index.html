@@ -1,0 +1,35 @@
+
+<!--
+design: we need two flexbox divs vertically splitting screen into two sections 1/3VW on left 2/3VW on right
+responsive: scale until width is less than 400px or something like that... switch to scrolling
+the right 2/3s of viewport section should be vertically split into 3 even sections with the form in the middle
+the vertical scaling should be text only, margins & padding static. should stop scaling and switch to scrolling as well
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-column-left">
+        <p>ODIN</p>
+    </div>
+    <div class="flex-column-right">
+        <div class="item1">
+            <p>this is not a real online service.</p>
+        </div>
+        <div class="item2">
+            <p>Lets Do this!</p>
+        </div>
+        <div class="item3">
+            <p>create account</p>
+        </div>
+    </div>
+</body>
+</html>
