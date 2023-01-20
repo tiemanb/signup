@@ -4,9 +4,8 @@ design: we need two flexbox divs vertically splitting screen into two sections 1
 responsive: scale until width is less than 400px or something like that... switch to scrolling
 the right 2/3s of viewport section should be vertically split into 3 even sections with the form in the middle
 the vertical scaling should be text only, margins & padding static. should stop scaling and switch to scrolling as well
-
-
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,17 +17,44 @@ the vertical scaling should be text only, margins & padding static. should stop 
 </head>
 <body>
     <div class="flex-column-left">
-        <p>ODIN</p>
+        <div class="logo">
+            <div class="logo-image"><img src="odin-lined.png" alt=""></div>
+            <div class="logo-text"><p>ODIN</p></div>
+        </div>
     </div>
     <div class="flex-column-right">
         <div class="item1">
-            <p>this is not a real online service.</p>
+            <div><p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. </p>
+                <p>Sign up <span>now</span> to get started.</p></div>
+            <div><p>You <span>know</span> you want to.</p></div>
         </div>
         <div class="item2">
             <p>Lets Do this!</p>
+            <field action="" method="get" class="form">
+                <div class="two-col">
+                    <div class="col1">
+                        <label for="fname">First Name:</label>
+                        <input id="fname" name="fname" type="text" required>
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" required>
+                        <label for="pw">Password:</label>
+                        <input id="pw" name="pw" type="password" required>
+                    </div>
+                
+                    <div class="col2">
+                        <label for="lname">Last Name:</label>
+                        <input id="lname" name="lname" type="text" required>
+                        <label for="phone"type="tel">Phone Number:</label>
+                        <input id="phone" name="phone" type="tel">
+                        <label for="confirm-pw">Confirm Password:</label>
+                        <input id="confirm-pw" name="confirm-pw" type="password" required>
+                    </div>
+                </div>
+                <button>Create Account</button>
+            </field>
         </div>
         <div class="item3">
-            <p>create account</p>
+    
         </div>
     </div>
 </body>
